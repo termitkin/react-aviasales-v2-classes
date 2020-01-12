@@ -94,7 +94,7 @@ const StyledCheckboxWrap = styled.div`
   }
 `;
 
-class Checkbox extends React.Component {
+class Checkbox extends React.PureComponent {
   handleClickOnCheckbox = () => {
     return this.props.changeStops({
       currentClickedCheckbox: "checkbox" + this.props.id,
@@ -109,16 +109,16 @@ class Checkbox extends React.Component {
     });
   };
 
-  onlyButton =
-    this.props.stops === "all" ? (
-      ""
-    ) : (
-      <StyledOnlyButton onClick={this.handleClickOnOnlyButton}>
-        только
-      </StyledOnlyButton>
-    );
-
   render() {
+    let onlyButton;
+    if (this.props.stops !== "all") {
+      onlyButton = (
+        <StyledOnlyButton onClick={this.handleClickOnOnlyButton}>
+          только
+        </StyledOnlyButton>
+      );
+    }
+
     return (
       <StyledCheckboxWrap tabIndex="-1">
         <StyledCheckbox
@@ -130,7 +130,7 @@ class Checkbox extends React.Component {
         <StyledLabel htmlFor={"checkbox" + this.props.id}>
           {this.props.labelText}
         </StyledLabel>
-        {this.onlyButton}
+        {onlyButton}
       </StyledCheckboxWrap>
     );
   }

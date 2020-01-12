@@ -7,6 +7,17 @@ class CurrencyButton extends React.Component {
     return this.props.changeCurrency(this.props.currency);
   };
 
+  // Reduced renders count. 2 instead 3.
+  shouldComponentUpdate(nextProps, nextState) {
+    if (
+      nextProps.currentCurrency === this.props.currency ||
+      this.props.currency === this.props.currentCurrency
+    ) {
+      return true;
+    }
+    return false;
+  }
+
   render() {
     const StyledButton = styled.button`
       width: 33.3%;

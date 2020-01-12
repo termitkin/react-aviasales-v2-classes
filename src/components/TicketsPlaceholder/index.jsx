@@ -19,7 +19,7 @@ const StyledText = styled.span`
   font-weight: bold;
 `;
 
-class TicketsPlaceholder extends React.PureComponent {
+class TicketsPlaceholder extends React.Component {
   render() {
     return (
       <div>
