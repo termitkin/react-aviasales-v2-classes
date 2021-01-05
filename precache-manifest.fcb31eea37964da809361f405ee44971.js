@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94728672bea929a898478a9145256a62",
+    "revision": "ac26b11e5f76b0a243dcdb044dc755b4",
     "url": "/react-aviasales-v2-classes/index.html"
   },
   {
-    "revision": "4d391049490b71afe45e",
+    "revision": "fa313037b2913343c49f",
     "url": "/react-aviasales-v2-classes/static/css/main.cc8e061c.chunk.css"
   },
   {
-    "revision": "8a5075f6ae8f6a68ca5b",
-    "url": "/react-aviasales-v2-classes/static/js/2.bd4c2789.chunk.js"
+    "revision": "f8fe9c8d37e9aebd1b1e",
+    "url": "/react-aviasales-v2-classes/static/js/2.958c35a9.chunk.js"
   },
   {
-    "revision": "84a2a7a390df1ac99fa4fadf23155e60",
-    "url": "/react-aviasales-v2-classes/static/js/2.bd4c2789.chunk.js.LICENSE"
+    "revision": "e928fe768baa9832b5bc57eae021f30c",
+    "url": "/react-aviasales-v2-classes/static/js/2.958c35a9.chunk.js.LICENSE"
   },
   {
-    "revision": "4d391049490b71afe45e",
-    "url": "/react-aviasales-v2-classes/static/js/main.a34e0a05.chunk.js"
+    "revision": "fa313037b2913343c49f",
+    "url": "/react-aviasales-v2-classes/static/js/main.5c4297af.chunk.js"
   },
   {
     "revision": "e0753775b88f85e171bb",
